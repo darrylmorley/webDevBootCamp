@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Register</h1>
+  <form action="" method="">
+    <section>
+      <label for="fname">First Name:</label>
+      <input type="text" name="name" id="fname" placeholder="John" required>
+
+      <label for="sname">Surname:</label>
+      <input type="text" name="name" id="sname" placeholder="Smith" required>
+    </section>
+
+    <section>
+      <label for="male">Male</label>
+      <input type="radio" name="sex" id="male">
+
+      <label for="female">Female</label>
+      <input type="radio" name="sex" id="female">
+
+      <label for="other">Other</label>
+      <input type="radio" name="sex" id="other">
+    </section> 
+
+    <section>
+      <label for="email">Email:</label>
+      <input type="email" name="loginDetail" id="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" name="loginDetail" id="password" pattern=".{5,10}" title="5 to 10 characters">
+    </section>
+
+    <section>
+      <label for="birth">Birthday:</label>
+      <select name="day">
+        <option>Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      
+      <select name="month">
+        <option>Month</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+      </select>
+      
+      <select name="year">
+        <option>Year</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+      </select>
+    </section>
+
+    <p>I agree to the terms and conditions <input type="checkbox" name="agree" id="agree"></p>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
